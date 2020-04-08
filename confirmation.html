@@ -1,0 +1,133 @@
+
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Login-SRMS</title>
+        <link rel="stylesheet" href="./styles/bootstrap.min.css">
+        <script defer src="./scripts/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+          .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+          }
+
+          .tablink:hover {
+            background-color: #777;
+          }
+
+          /* Style the tab content (and add height:100% for full page content) */
+          .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+          }
+          .header {
+            background: url(header.jpg);
+            padding: 40px;
+            text-align: center;
+            color: #ffff99;
+          }
+
+          /* Increase the font size of the heading */
+          .header {
+            font-size: 25px;
+            font-family: Impact, Charcoal, sans-serif;
+          }
+          .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+          }
+          .alert {
+        padding: 100px;
+        background-color: #00b300; /* Red */
+        color: white;
+        margin-bottom: 15px;
+      }
+      .alert {
+        opacity: 1;
+        transition: opacity 0.6s; /* 600ms to fade out */
+      }
+
+      /* The close button */
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      /* When moving the mouse over the close button */
+      .closebtn:hover {
+        color: black;
+      }
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+        </style>
+      </head>
+      <body>
+
+        <div class="header">
+          <h1>Student Record Management System</h1>
+          <p>A website for keeping students record safe..</p>
+        </div>
+
+                                      <!--navbar-->
+
+        <button class="tablink" onclick="location.href='index.html'">Home</button>
+        <button class="tablink" onclick="location.href='login.html'" >Login</button>
+        <button class="tablink" onclick="location.href='contactus.html'">Contact Us</button>
+        <button class="tablink" onclick="location.href='aboutus.html'">About Us</button>
+
+        <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <center>
+        Success!! Your messgae has been sent to our technical team they will reach u as soon as possible. thanks for sharing your views ons us...
+        </center>
+
+        </div>
+        <h4>as back end work is not done yet thats why we have this alert page..</h4>
+        <center><p><a href="home.html"><button class="button">click here to return to Home page</button></a></p></center>
+
+        <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        for (i = 0; i < close.length; i++) {
+        close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+        }
+        </script>
+
+
+        <div class="footer">
+          <h2>copyright @ 2020, Odisha, INDIA. All rights reserved. This website is prepared for project purpose dont use it as a commercial website.</h2>
+        </div>
+      </body>
+    </html>

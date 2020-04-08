@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Student-SRMS</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script defer src="./scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .header {
+        background: url(header.jpg);
+        padding: 40px;
+        text-align: center;
+        color: #ffff99;
+      }
+
+      /* Increase the font size of the heading */
+      .header {
+        font-size: 25px;
+        font-family: Impact, Charcoal, sans-serif;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #f0f5f5;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #ffdf99;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+
+}
+.img {
+  background-color: white;
+  font-size: 25px;
+  text-align: justify;
+  padding: 20px;
+
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Student Record Management System</h1>
+      <p>A website for keeping students record safe..</p>
+    </div>
+
+                                  <!--navbar-->
+
+    <div class="topnav">
+      <a class="active" href="#home">SRMS</a>
+      <a href="#admin">Welcome!! ADMIN</a>
+      <a href="#date">8th APRIL 2020</a>
+      <a href="index.html">Logout</a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <h3><center>DASHBOARD</center></h3>
+        <p><center>Manage everything from here..</center></p>
+        <div class="fakeimg" style="height:60px;"><h4><a href="student.html">Manage Students</a></h4></div><br>
+        <div class="fakeimg" style="height:60px;"><h4><a href="questions.html">ADD Students</a></h4></div><br>
+      </div>
+      <div class="main">
+        <h3>Welcome Admin!! </h3>
+        <form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" value="Enter First Name" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Enter Last Name" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">Gender</label>
+      <input type="text" class="form-control" id="validationDefault01" value="" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Branch</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Enter Branch Of Student" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Admission Year</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Enter Admission year" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Unique ID</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">State</label>
+      <select class="custom-select" id="validationDefault04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Andra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chhattisgarh</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu and Kashmir</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Orissa</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telagana</option>
+        <option>Tripura</option>
+        <option>Uttaranchal</option>
+        <option>Uttar Pradesh</option>
+        <option>West Bengal</option>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" onclick="location.href='admin.html'">Submit form</button>
+</form>
+        </div>
+        </div>
+
+<div class="footer">
+      <h2>copyright @ 2020, Odisha, INDIA. All rights reserved. This website is prepared for project purpose dont use it as a commercial website.</h2>
+    </div>
+
+  </body>
+</html>
