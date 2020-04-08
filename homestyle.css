@@ -1,0 +1,28 @@
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  background: url(header.jpg);
+  padding: 30px;
+  text-align: center;
+  color: #ffff99;
+}
+
+/* Increase the font size of the heading */
+.header {
+  font-size: 35px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}

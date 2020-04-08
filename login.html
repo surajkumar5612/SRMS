@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login-SRMS</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script src="home.jss" type="text/javascript"></script>
+    <script defer src="./scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+      }
+
+      .tablink:hover {
+        background-color: #777;
+      }
+
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+      }
+      .header {
+        background: url(header.jpg);
+        padding: 40px;
+        text-align: center;
+        color: #ffff99;
+      }
+
+      /* Increase the font size of the heading */
+      .header {
+        font-size: 25px;
+        font-family: Impact, Charcoal, sans-serif;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      form {
+        border: 3px solid #f1f1f1;
+      }
+
+      /* Full-width inputs */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Extra style for the cancel button (red) */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+
+      /* Center the avatar image inside this container */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+
+      /* Avatar image */
+      img.avatar {
+        width: 20%;
+        border-radius: 60%;
+      }
+
+      /* The "Forgot password" text */
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Student Record Management System</h1>
+      <p>A website for keeping students record safe..</p>
+    </div>
+
+                                  <!--navbar-->
+
+    <button class="tablink" onclick="location.href='index.html'">Home</button>
+    <button class="tablink" onclick="location.href='login.html'" >Login</button>
+    <button class="tablink" onclick="location.href='contactus.html'">Contact Us</button>
+    <button class="tablink" onclick="location.href='aboutus.html'">About Us</button>
+
+    <form action="admin.html" method="post">
+  <div class="imgcontainer">
+    <img src="avatar.png" height="300px" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+</form>
+
+    <div class="footer">
+      <h2>copyright @ 2020, Odisha, INDIA. All rights reserved. This website is prepared for project purpose dont use it as a commercial website.</h2>
+    </div>
+  </body>
+</html>
